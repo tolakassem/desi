@@ -1,0 +1,270 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+    transition: all 0.7s;
+    overflow-x: hidden;
+}
+/* body propeties */
+body{
+    width: 100%;
+    animation: identifier 2s ease-in-out;
+    background: url(img/main-bg.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+/* header propeties */
+header{
+    width: 90%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+header li{
+    margin-left:50px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    list-style: none;
+}
+header li:hover{
+    color: #3608da;
+}
+/* main section propeties */
+.main-text{
+    font-size: 150px;
+    text-align: center;
+    color: #003f68;
+}
+.Main-section{
+    text-align: center;
+}
+.Main-section .all-pragraghs{
+    max-width: 40%;
+    font-size: 20px;
+    margin:100px auto;
+}
+/* square propeties */
+.square{
+    position:absolute;
+    border: 50px double #003f68;
+    width: 500px;
+    height:500px;
+    left: 80%;
+    top:25%;
+    transform: rotate(50deg);
+}
+.square img{
+    position: absolute;
+    left: 80px;
+    top: 80px;
+    transform: rotate(-50deg);
+}
+.sub2-section{
+    margin-top:20%;
+}
+/*our things */
+.our-text{
+    width: 100%;
+    text-align: center;
+    margin: 5pc auto;
+    margin-bottom: 5px;
+    font-size: 40px;
+}
+.our-lorem{
+    width: 100%;
+    text-align: center;
+    margin:10px auto;
+    margin-bottom: 5pc;
+}
+.photos{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10pc;
+}
+.photos img{
+    border-radius: 50%;
+}
+
+
+.photos img{
+    width: 350px;
+    height:350px;
+    cursor: pointer;
+    transition:1s;
+    border: 2px solid #000;
+}
+.photos img:hover{
+    filter: grayscale(0);
+    border-radius: 0%;
+}
+
+/* sub-section propeties */
+
+.sub-section{
+    background: url(img/Text\ photo.jpg);
+    color: aliceblue;
+    width: 100%;
+}
+.all-pragraghs{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+}
+.sub-section button{
+    margin:2pc auto;
+    position: relative;
+    left: 50%;
+    transform:translate(-50%) ;
+}
+/* tool-box propeties */
+.tool-box{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5pc;
+}
+.tools{
+    background-color:#f5a106;
+    padding: 2pc;
+    border-radius: 50%;
+}
+.tool-box h2{
+    font-size:30px;
+    margin: 10px;
+}
+.tool-box p{
+    width:50%;
+    text-align: center;
+    margin: 2pc auto;
+}
+ 
+/*conect box propeties */
+.conect-box{
+    background: url(img/Text\ photo.jpg);
+    width: 100%;
+    margin-top: 5pc;
+}
+.sign-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    margin: 5pc auto;
+    animation: identifier 2s;
+}
+.sign-box img{
+    width: 50%;
+}
+form input{
+    margin-bottom: 1pc;
+    padding:1pc;
+    width: 60%;
+    height: 40px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+}
+.button{
+    width: 30%;
+    height:max-content;
+    display: block;
+}
+/* footer properties */
+footer{
+    margin: 30px;
+}
+.icons{
+    position: relative;
+    left: 45%;
+    transform: translate(-45%);
+}
+.icons:hover{
+    transform: scale(1.5);
+    width: 100px;
+}
+.footer-P{
+    text-align: center;
+    margin: auto;
+}
+/*project End */
+
+/* some main properties */
+
+/* button properties */
+button,.button{
+    outline: none;
+    border: none;
+    background-color: #143d59;
+    color: antiquewhite;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width:max-content;
+}
+button:hover,.button:hover{
+    background-color: #f5a106;
+    color: #000;
+}
+/*scrollbar properties */
+::-webkit-scrollbar{
+    background-color: #70abee;
+    width:10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #002880;
+}
+/* keyframes properties */
+@keyframes identifier {
+    0%{
+        transform: scale(2);
+    }
+    50%{
+        filter:brightness(2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+/* sellection properties */
+::selection{
+    background-color: #340fdb;
+    color: bisque;
+}
+/* placeholder properties */
+::placeholder{
+    font-size: 20px;
+    color: #003e689f;
+}
+/* media query properties */
+@media (max-width:650px){
+    header nav ul li{
+        display: none;
+    }
+    .photos img{
+        width: 50px;
+        height:50px;
+    }
+}
+@media (max-width:1600px){
+    .photos img{
+        width: 250px;
+        height:250px;
+    }
+}
